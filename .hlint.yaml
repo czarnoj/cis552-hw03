@@ -1,0 +1,32 @@
+# HLint configuration file
+##########################
+
+- functions:
+  - {name: (!!), within: []} 
+  - {name: Data.Maybe.fromJust, within: []} 
+  - {name: (Data.Map.!), within: []} 
+
+- ignore: {name: "Avoid lambda"} 
+- ignore: {name: "Avoid lambda using `infix`"}
+- ignore: {name: "Monoid law, left identity"}
+- ignore: {name: "Use head"}
+- ignore: {name: "Use mapM"}
+- ignore: {name: "Use mconcat"}
+- ignore: {name: "Use ||"}
+- ignore: {name: "Use newtype instead of data"}
+- ignore: {name: "Use foldMap"}
+- ignore: {name: "Use guards"}
+- ignore: {name: "Use lambda-case"}
+- ignore: {name: "Use $>"}
+- ignore: {name: "Use tuple-section"}
+- ignore: {name: "Use product"}
+- ignore: {name: "Use sum"}
+- ignore: {name: "Use list literal"}
+- ignore: {name: "Reduce duplication"}
+- ignore: {name: "Redundant return"}
+- ignore: {name: "Redundant lambda"}
+- ignore: {name: "Replace case with fromMaybe"}
+- ignore: {name: "Use newtype instead of data"}
+
+
+
