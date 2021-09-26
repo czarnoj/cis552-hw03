@@ -216,7 +216,7 @@ compareTempDiff w1 w2 = compare (diff w1) (diff w2)
 -- | A program that computes information about the weather
 weatherProgram :: IO ()
 weatherProgram = do
-  chars <- readFile "jan.dat"
+  chars <- readFile "jul20.csv"
   case parse chars of
     Nothing ->
       putStrLn "Cannot parse weather file."
@@ -487,8 +487,8 @@ foggyDays = undefined
 
 {-
 Make sure that you write some tests for these functions! This time we've given you
-several weather data files to play with: jan.dat, jul20.dat and jul21.dat. Make sure
-that your implementation works for all of them.
+two weather data files to play with: jul20.csv and jul21.csv. Make sure
+that your implementation works for both of them.
 
 -----------------------------------------------------------------
 
@@ -506,7 +506,8 @@ soccer = undefined
 
 {-
 >
-
+>
+>
 -}
 
 soccerProgram :: IO ()
